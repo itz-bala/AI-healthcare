@@ -1,0 +1,24 @@
+{
+  "totalPrescriptions": 6,
+  "mostPrescribedMedicines": {
+    "Paracetamol": 4,
+    "Sumatriptan": 1,
+    "Vitamin C": 1,
+    "Ibuprofen": 1,
+    "Amlodipine": 2,
+    "Cetirizine": 2,
+    "Telmisartan": 2
+  },
+  "prescriptionsByDoctor": {
+    "1": 1,
+    "4": 2,
+    "6": 2,
+    "7": 1
+  },
+  "prescriptionsByDepartment": {
+    "CARDIOLOGY": 2,
+    "NEUROLOGY": 2,
+    "ENT": 1,
+    "GENERAL_MEDICINE": 1
+  }
+}

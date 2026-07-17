@@ -1,0 +1,15 @@
+{
+  "totalLabTests": 7,
+  "pendingReports": 1,
+  "completedReports": 6,
+  "requestedLabTests": {
+    "THROAT SWAB CULTURE": 1,
+    "CT BRAIN": 1,
+    "MRI BRAIN": 1,
+    "COMPLETE BLOOD COUNT": 1,
+    "TREADMILL TEST": 3
+  },
+  "mostRequestedLabTests": {
+    "TREADMILL TEST": 3
+  }
+}

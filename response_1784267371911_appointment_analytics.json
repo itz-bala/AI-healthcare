@@ -1,0 +1,21 @@
+{
+  "dailyAppointments": 0,
+  "weeklyAppointments": 13,
+  "monthlyAppointments": 15,
+  "appointmentsByDepartment": {
+    "CARDIOLOGY": 5,
+    "NEUROLOGY": 3,
+    "ENT": 3,
+    "GENERAL_MEDICINE": 13
+  },
+  "appointmentsByDoctor": {
+    "1": 3,
+    "4": 5,
+    "6": 3,
+    "7": 13
+  },
+  "peakBookingHours": {
+    "15": 14
+  },
+  "averageConsultationTime": 30
+}

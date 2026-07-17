@@ -1,0 +1,12 @@
+{
+  "newPatients": 7,
+  "returningPatients": 7,
+  "malePatients": 8,
+  "femalePatients": 6,
+  "otherPatients": 0,
+  "children": 4,
+  "adults": 5,
+  "middleAge": 3,
+  "seniorCitizens": 2,
+  "mostVisitedDepartment": "GENERAL_MEDICINE"
+}

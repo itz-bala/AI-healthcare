@@ -1,0 +1,26 @@
+{
+  "doctorsCount": {
+    "NEUROLOGY": 1,
+    "CARDIOLOGY": 2,
+    "GENERAL_MEDICINE": 1,
+    "ENT": 3
+  },
+  "patientsCount": {
+    "GENERAL_MEDICINE": 13,
+    "CARDIOLOGY": 5,
+    "NEUROLOGY": 3,
+    "ENT": 3
+  },
+  "appointmentsCount": {
+    "GENERAL_MEDICINE": 13,
+    "CARDIOLOGY": 5,
+    "NEUROLOGY": 3,
+    "ENT": 3
+  },
+  "revenueGenerated": {
+    "CARDIOLOGY": 11520,
+    "NEUROLOGY": 10350,
+    "ENT": 5370,
+    "GENERAL_MEDICINE": 2830
+  }
+}

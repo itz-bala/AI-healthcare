@@ -1,0 +1,22 @@
+{
+  "dailyRevenue": 0,
+  "weeklyRevenue": 30070,
+  "monthlyRevenue": 30070,
+  "totalRevenue": 30070,
+  "pendingPayments": 23570,
+  "revenueByDoctor": {
+    "sube": 5370,
+    "narayana": 11520,
+    "poornima": 2830,
+    "magima": 10350
+  },
+  "revenueByDepartment": {
+    "CARDIOLOGY": 11520,
+    "NEUROLOGY": 10350,
+    "ENT": 5370,
+    "GENERAL_MEDICINE": 2830
+  },
+  "revenueByPaymentMethod": {
+    "CASH": 30070
+  }
+}

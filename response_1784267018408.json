@@ -1,0 +1,22 @@
+{
+  "last7DaysAppointments": {
+    "2026-07-11": 2,
+    "2026-07-12": 3,
+    "2026-07-13": 2,
+    "2026-07-14": 2,
+    "2026-07-15": 1,
+    "2026-07-16": 3
+  },
+  "last30DaysRevenue": {
+    "2026-07-15": 30070
+  },
+  "monthlyPatientGrowth": {
+    "JULY": 14
+  },
+  "overallHospitalPerformance": {
+    "Appointments": 24,
+    "Revenue": 30070,
+    "Patients": 14,
+    "Doctors": 7
+  }
+}

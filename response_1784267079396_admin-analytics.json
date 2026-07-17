@@ -1,0 +1,12 @@
+{
+  "totalPatients": 14,
+  "activePatients": 14,
+  "totalDoctors": 7,
+  "activeDoctors": 7,
+  "totalAppointments": 24,
+  "todayAppointments": 0,
+  "completedAppointments": 3,
+  "cancelledAppointments": 2,
+  "totalRevenue": 30070,
+  "pendingPayments": 23570
+}
