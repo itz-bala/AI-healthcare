@@ -15,10 +15,10 @@ public class PatientResponseDto {
 	
      private Long id;
 	
-	@NotBlank(message="name must be")
+	
 	private String name;
 	
-	@Email(message="invalid email")
+	
 	private String email;
 	
 	

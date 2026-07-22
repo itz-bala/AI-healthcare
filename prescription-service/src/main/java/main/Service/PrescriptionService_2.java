@@ -274,6 +274,45 @@ public class PrescriptionService_2 implements PrescriptionService{
 
 	    return dto;
 	}
+
+
+
+	@Override
+	public List<PrescriptionResponseDto> getAllPatientPrescriptionDetails(Long patientId) {
+		// TODO Auto-generated method stub
+		
+		List<Prescription>patientprescription=repo.findByPatientId(patientId);
+		
+		
+		if(patientprescription.isEmpty()) {
+			
+			throw new ResourceNotFoundException("patient is not found regards the id"+patientId);
+		}
+		
+		return patientprescription.stream().map(p->{
+		
+		
+		
+		     //parent entity to dto
+			
+			
+		PrescriptionResponseDto response=mapper.toDto(p);
+		
+		
+		//child entity to dto
+		
+		List<PrescriptionMedicineResponseDto>mediResponse=p.getMedicines().stream()
+				                                            .map(mapper::medicine_toDto).toList();
+		  
+		
+		response.setMedicines(mediResponse);
+		
+		return response;
+		
+		}).toList();
+		
+		
+	}
 		
 	
 	

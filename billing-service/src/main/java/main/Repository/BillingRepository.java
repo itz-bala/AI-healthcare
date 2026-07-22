@@ -14,5 +14,7 @@ public interface BillingRepository extends JpaRepository<Billing,Long>{
 	List<Billing>findByBillingDateBetween(LocalDateTime start,LocalDateTime end);
 	
 	long countByPaymentStatus(PaymentStatus paymentStatus);
+	
+	List<Billing>findByPatientId(Long patientId);
 
 }

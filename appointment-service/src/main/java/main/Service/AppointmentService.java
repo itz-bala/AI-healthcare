@@ -41,6 +41,10 @@ public interface AppointmentService {
 
 	Map<String, Long> last7DaysAppointments();
 
+	List<AppointmentResponseDto> getAllPatientAppointments(Long patientId);
+
+	
+
 	
 
 	

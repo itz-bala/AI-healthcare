@@ -9,14 +9,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import main.Dto.AdminDashboardDto;
 import main.Dto.AppointmentAnalyticsDto;
+import main.Dto.BillingAnalyticsDto;
 import main.Dto.DepartmentAnalyticsDto;
 import main.Dto.DoctorAnalyticsDto;
 import main.Dto.LabAnalyticsDto;
 import main.Dto.PatientAnalyticsDto;
 import main.Dto.PrescriptionAnalyticsDto;
-import main.Dto.BillingAnalyticsDto;
 import main.Dto.TrendAnalyticsDto;
 import main.Service.DashboardService;
 
@@ -141,7 +145,7 @@ class DashboardController {
 	  @GetMapping("/admin/export/excel")
 	  public ResponseEntity<byte[]> exportExcel() {
 
-	      byte[] excel = service.exportExcel();
+      byte[] excel = service.exportExcel();
 
 	      return ResponseEntity.ok()
 	              .header(HttpHeaders.CONTENT_DISPOSITION,
@@ -150,6 +154,12 @@ class DashboardController {
 	                      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"))
 	              .body(excel);
 	  }
+	  
+	  
+	  
+	  
+	  
+	 
 	  
 	  //pdf
 	  

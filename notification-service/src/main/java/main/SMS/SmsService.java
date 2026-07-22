@@ -12,29 +12,29 @@ import main.Dto.NotificationDto;
 @Service
 public class SmsService {
 	
-	@Value("${twilio.account.sid}")
-   private String accountSid;
-
-    @Value("${twilio.auth.token}")
-    private String authToken;
-
-    @Value("${twilio.phone.number}")
-    private String twilioPhoneNumber;
-
-    @PostConstruct
-    public void init() {
-        Twilio.init(accountSid, authToken);
-    }
-
-    public void sendSms(String to, String body) {
-
-        Message.creator(
-                new PhoneNumber(to),
-                new PhoneNumber(twilioPhoneNumber),
-                body
-        ).create();
-
-        System.out.println("SMS Sent Successfully...");
-    }
+//	@Value("${twilio.account.sid}")
+//   private String accountSid;
+//
+//    @Value("${twilio.auth.token}")
+//    private String authToken;
+//
+//    @Value("${twilio.phone.number}")
+//    private String twilioPhoneNumber;
+//
+//    @PostConstruct
+//    public void init() {
+//        Twilio.init(accountSid, authToken);
+//    }
+//
+//    public void sendSms(String to, String body) {
+//
+//        Message.creator(
+//                new PhoneNumber(to),
+//                new PhoneNumber(twilioPhoneNumber),
+//                body
+//        ).create();
+//
+//        System.out.println("SMS Sent Successfully...");
+//    }
 
 }

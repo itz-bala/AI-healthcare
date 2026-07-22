@@ -220,6 +220,23 @@ public class LabService_2 implements LabService{
 	
 	
 	
+	//getAll patient lab reports
+	
+	
+	
+	@Override
+	public List<LabResponseDto> getAllPatientLabReports(Long patientId) {
+		// TODO Auto-generated method stub
+		
+		List<Lab>patientReports=repo.findByPatientId(patientId);
+		
+		
+		return patientReports.stream().map(mapper::toDto).toList();
+	}
+
+	
+	
+	
 	
 	
 	

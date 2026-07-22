@@ -35,5 +35,8 @@ public interface AppointmentRepository extends JpaRepository<Appointment,Long>{
 	List<Appointment>findByAppointmentDateBetween(LocalDateTime start,LocalDateTime end);
 	
 	long countByPatientId(Long patientId);
+	
+	
+	List<Appointment>findByPatientId(Long PatientId);
 
 }

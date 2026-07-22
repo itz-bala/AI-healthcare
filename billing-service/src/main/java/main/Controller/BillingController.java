@@ -113,6 +113,17 @@ public class BillingController {
 
 	}
 	
+	
+	
+	//getAll patient bills
+	
+	@GetMapping("/patient/{patientId}")
+	public ResponseEntity<List<BillingResponseDto>>getPatientBill(@PathVariable Long patientId){
+		
+		List<BillingResponseDto>dto=service.getPatientBill(patientId);
+		return ResponseEntity.ok(dto);
+	}
+	
 }
 
 

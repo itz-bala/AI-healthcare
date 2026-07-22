@@ -77,4 +77,18 @@ public class LabController {
 	}
 	
 	
+	//get patient lab details
+	
+	@GetMapping("/patient/{patientId}")
+	
+	public ResponseEntity<List<LabResponseDto>>getAllPatientLabReports(@PathVariable Long patientId){
+		
+		List<LabResponseDto>dto=service.getAllPatientLabReports(patientId);
+		
+		return ResponseEntity.ok(dto);
+		
+		
+	}
+	
+	
 }

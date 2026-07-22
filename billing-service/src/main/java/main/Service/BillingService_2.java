@@ -464,6 +464,19 @@ public class BillingService_2 implements BillingService{
 
 	            ));
 	}
+
+
+
+	
+	    //getAll patient bills
+	@Override
+	public List<BillingResponseDto> getPatientBill(Long patientId) {
+		// TODO Auto-generated method stub
+		
+		List<Billing>patientbills=repo.findByPatientId(patientId);
+		
+		return patientbills.stream().map(mapper::toDto).toList();
+	}
 	
 	
 	

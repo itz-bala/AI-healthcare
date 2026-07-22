@@ -19,4 +19,6 @@ public interface LabService {
 
 	LabAnalyticsDto getAnalytics();
 
+	List<LabResponseDto> getAllPatientLabReports(Long patientId);
+
 }

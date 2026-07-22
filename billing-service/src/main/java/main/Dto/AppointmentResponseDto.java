@@ -22,7 +22,7 @@ public class AppointmentResponseDto {
 	
 	
 	
-	private LocalDateTime  appointmentIdate;
+	private LocalDateTime  appointmentdate;
 	
 	private LocalDateTime bookingTime;
 

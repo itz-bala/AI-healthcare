@@ -433,6 +433,36 @@ public Map<String, Long> last7DaysAppointments() {
 
 
 
+    //get patient appointments
+
+@Override
+public List<AppointmentResponseDto> getAllPatientAppointments(Long patientId) {
+	// TODO Auto-generated method stub
+	
+	
+	List<Appointment>patientappointment=repo.findByPatientId(patientId);
+	
+	
+	if(patientappointment.isEmpty()) {
+		
+		
+	throw new IdNotFoundException("no appointments found regards the patientId:"+patientId)	;
+		
+	}
+	
+	
+	return patientappointment.stream().map(mapper::toDto).toList();
+}
+
+
+
+
+
+
+
+
+
+
 
 
   

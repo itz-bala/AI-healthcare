@@ -166,4 +166,17 @@ public class AppointmentController {
 	    return ResponseEntity.ok(dto);
 	}
 	
+	
+	//get patient appointments----------->
+	
+	@GetMapping("/patient/{patientId}")
+	public ResponseEntity<List<AppointmentResponseDto>>getAllPatientAppointments(@PathVariable Long patientId){
+		
+		List<AppointmentResponseDto>dto=service.getAllPatientAppointments(patientId);
+		
+		return ResponseEntity.ok(dto);
+	}
+	
+	
+	
 }

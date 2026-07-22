@@ -17,6 +17,8 @@ public interface PrescriptionService {
 
 	PrescriptionAnalyticsDto analytics();
 
+	List<PrescriptionResponseDto> getAllPatientPrescriptionDetails(Long patientId);
+
 	
 
 }

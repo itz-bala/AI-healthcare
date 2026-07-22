@@ -27,6 +27,8 @@ public interface BillingService {
 
 	Map<String, Double> getRevenueByDepartment();
 
+	List<BillingResponseDto> getPatientBill(Long patientId);
+
 
 
 }
